@@ -39,7 +39,7 @@ void computeSieve( int arr[], int lower_bound, int upper_bound){
         temp += value;
         
         // if the number is not prime, set to zero
-        if ((arr[temp] != NOT_PRIME) && (temp <= upper_bound)){
+        if ((temp <= upper_bound) && (arr[temp] != NOT_PRIME)){
             arr[temp] = NOT_PRIME;
         }
     }
